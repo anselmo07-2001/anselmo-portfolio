@@ -8,14 +8,6 @@
     src: url(../assets/fonts/FuturaPTMedium.otf)
 }
 
-.leagueSpartanFont {
-    font-family: League Spartan;
-}
-
-.futuraPtMd {
-    font-family:FuturaPTMedium;
-}
-
 * {
     padding: 0;
     margin:0;
@@ -26,12 +18,30 @@ html {
     font-size:10px;
 }
 
+/*** Reusable Classes **/
 
+.leagueSpartanFont {
+    font-family: League Spartan;
+}
 
+.futuraPtMd {
+    font-family:FuturaPTMedium;
+}
 
 .container {
     max-width:120rem;
+    margin: 0 auto;
 }
+
+.headingLine {
+    width: 3rem;
+    display: inline-block;
+    border: 3px solid #7843e9;
+    border-radius: 5px;
+}
+
+
+/************************/
 
 
 /**** Colors ****/
@@ -42,3 +52,12 @@ html {
 .secColor {
     color:#f3f3f3;
 }
+
+/****
+Spacing
+small = 2rem
+medium = 4.5rem
+
+
+
+**/

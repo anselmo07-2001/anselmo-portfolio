@@ -1,0 +1,44 @@
+.aboutMe {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 12rem;
+}
+
+.aboutMe__heading {
+    font-size:2.3rem;
+}
+
+.aboutMe__subheading {
+    font-size:2rem;
+    margin-bottom: 2rem;
+}
+
+.aboutMe__desc {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+}
+
+.aboutMe__headingWrapper {
+    margin-bottom: 4.5rem;
+}
+
+.resumeBtn {
+    background-color:#7843e9;
+    color:white;
+    padding:1rem 2.5rem;
+    border: none;
+    border-radius:1rem;
+    font-weight: bold;
+}
+
+.aboutMe__photoWrapper {
+    margin-left: 9rem;
+}
+
+.aboutMe__photo {
+    width: 35rem;
+    height: 20rem;
+    border: 3px solid #7843e9;
+    border-radius: 10px;
+    margin
+}

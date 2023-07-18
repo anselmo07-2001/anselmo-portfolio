@@ -1,12 +1,12 @@
 .heroLayout {
     display:grid;
     grid-template-columns: 1fr 1fr;
-    margin:0 auto;
     padding: 15rem 2.5rem;
 }
 
 .hero--wrapper {
     background-color:#f3f3f3;
+    margin-bottom:12rem;
 }
 
 .hero--heading {
