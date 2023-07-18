@@ -1,0 +1,102 @@
+.nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 3rem 0;
+    font-size:1.8rem;
+    align-items: center
+}
+
+
+.nav__links {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+}
+
+.nav__link {
+    text-decoration: none;
+    color:#000;
+}
+
+.toggleBtnWrapper {
+    display: none;
+}
+
+.toggleBtn--open {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    cursor: pointer;
+}
+
+.toggleBtn__line--open {
+    color: black;
+    width: 3.5rem;
+    display: inline-block;
+    border: 1.8px solid black;
+}
+
+
+.toogleBtn--close {
+    width: 3.5rem;
+    display: inline-block;
+}
+
+.toggleBtn__line--close {
+    color: black;
+    width: 3.5rem;
+    display: inline-block;
+    border: 1.8px solid black;
+}
+
+.line-1,
+.line-2 {
+    position: absolute;
+} 
+
+.line-1 {
+    transform: rotate(135deg);
+}
+
+.line-2 {
+    transform: rotate(-135deg);
+}
+
+.move-toogle {
+    left:50% !important;
+}
+
+
+
+@media (max-width: 60rem) {
+    .nav__links {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top:50%;
+        left:50%;
+        transform: translate(-50%,-50%);
+        gap:4rem;
+        font-size: 3.2rem;
+    }
+
+    .toggleBtnWrapper {
+        display: inline-block;
+        width: 3.5rem;
+        z-index: 100;
+        cursor: pointer;
+    }
+
+    .nav__navigationLink {
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        transition: all;
+        top: 50%;
+        left: -50%;
+        transform: translate(-50%, -50%);
+        transition: 0.3s all;
+        background-color: #efefefd9;
+    }
+}
+
