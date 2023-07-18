@@ -1,0 +1,51 @@
+.heroLayout {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    margin:0 auto;
+    padding: 15rem 2.5rem;
+}
+
+.hero--wrapper {
+    background-color:#f3f3f3;
+}
+
+.hero--heading {
+    font-size:6.5rem;
+    line-height: 6.8rem;
+}
+
+.hero--subheading {
+    font-size:2.8rem;
+    margin-bottom:2rem;
+}
+
+.hero--desc {
+    font-size:1.8rem;
+    margin-bottom:1.5rem;
+}
+
+.hero--icons {
+    display: flex;
+}
+
+.hero--icon {
+    width:2.5rem;
+    margin-right:1rem;
+}
+
+
+
+.profileContainer {
+    position: relative;
+}
+
+.profile {
+    width: 30rem;
+    height: 30rem;
+    border: 5px solid #7843e9;
+    border-radius: 50%;
+    position: absolute;
+    top:50%;
+    left:60%;
+    transform: translate(-50%,-50%);
+}

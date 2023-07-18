@@ -3,6 +3,19 @@
     src: url(../assets/fonts/LeagueSpartan-Bold.otf)
 }
 
+@font-face {
+    font-family: FuturaPTMedium;
+    src: url(../assets/fonts/FuturaPTMedium.otf)
+}
+
+.leagueSpartanFont {
+    font-family: League Spartan;
+}
+
+.futuraPtMd {
+    font-family:FuturaPTMedium;
+}
+
 * {
     padding: 0;
     margin:0;
@@ -13,11 +26,19 @@ html {
     font-size:10px;
 }
 
-body {
-    padding:2.8rem;
+
+
+
+.container {
+    max-width:120rem;
 }
 
-.leagueSpartanFont {
-    font-family: League Spartan;
+
+/**** Colors ****/
+.mainColor {
+    color:#7843e9;
 }
 
+.secColor {
+    color:#f3f3f3;
+}

@@ -1,7 +1,8 @@
 .nav {
     display: flex;
     justify-content: space-between;
-    padding: 3rem 0;
+    padding: 3rem;
+
     font-size:1.8rem;
     align-items: center
 }
