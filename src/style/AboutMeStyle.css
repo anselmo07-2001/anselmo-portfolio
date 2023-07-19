@@ -1,7 +1,7 @@
 .aboutMe {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin-bottom: 12rem;
+    margin-bottom: 15rem;
 }
 
 .aboutMe__heading {

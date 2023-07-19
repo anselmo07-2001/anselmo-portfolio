@@ -1,12 +1,10 @@
 import AboutMeStyle from "../style/AboutMeStyle.css"
+import SubHeading from "./SubHeading"
 
 const AboutMe = () => {
     return (
         <div className="container">
-            <div className="aboutMe__headingWrapper">
-                <h4 className="aboutMe__heading leagueSpartanFont">About Me</h4>
-                <span className="headingLine" style={{marginLeft:"3.5rem"}}></span>
-            </div>
+            <SubHeading title={"About Me"} ml={"3.5rem"}/>
             <div className="aboutMe">
                 <div className="aboutMe__photoWrapper">
                     <div className="aboutMe__photo"></div>
