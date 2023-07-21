@@ -4,6 +4,7 @@ import Hero from "./components/Hero"
 import AboutMe from "./components/AboutMe"
 import Techstack from "./components/Techstack"
 import MyProject from "./components/MyProject"
+import Contact from "./components/Contact"
 import global from "../src/style/global.css"
 
 
@@ -15,6 +16,7 @@ function App() {
       <AboutMe/>
       <Techstack/>
       <MyProject/>
+      <Contact/>
    </>
    )
 }

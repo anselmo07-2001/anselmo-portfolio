@@ -4,6 +4,11 @@
 }
 
 @font-face {
+    font-family: FuturaPtLight;
+    src: url(../assets/fonts/FuturaPTLight.otf)
+}
+
+@font-face {
     font-family: FuturaPTMedium;
     src: url(../assets/fonts/FuturaPTMedium.otf)
 }
@@ -11,6 +16,11 @@
 @font-face {
     font-family: FuturaPtBold;
     src: url(../assets/fonts/FuturaPTBold.otf)
+}
+
+@font-face {
+    font-family: FuturaPtBook;
+    src: url(../assets/fonts/FuturaPTBook.otf)
 }
 
 * {
@@ -27,6 +37,14 @@ html {
 
 .leagueSpartanFont {
     font-family: League Spartan;
+}
+
+.futuraPtLight {
+    font-family:FuturaPtLight;
+}
+
+.futuraPtBook {
+    font-family:FuturaPtBook;
 }
 
 .futuraPtMd {
