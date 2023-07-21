@@ -1,6 +1,25 @@
+.headingLine {
+    width: 3rem;
+    display: inline-block;
+    border: 3px solid #7843e9;
+    border-radius: 5px;
+}
+
+.subheading-desc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.subheading-section {
+   display: flex;
+   align-items: flex-start; 
+   flex-direction: column;
+}
 
 
-.subheading__title {
-    font-size:2.3rem;
+
+.subheading-title {
+    font-size:1.5rem;
     margin-bottom: 3px;
 }

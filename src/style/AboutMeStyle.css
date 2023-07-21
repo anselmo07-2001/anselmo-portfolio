@@ -8,7 +8,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 4.5rem;
-    padding: 2rem;
+    padding: 7.5rem 2rem 0 2rem;
 }
 
 

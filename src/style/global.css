@@ -60,16 +60,7 @@ html {
     margin: 0 auto;
 }
 
-.headingLine {
-    width: 3rem;
-    display: inline-block;
-    border: 3px solid #7843e9;
-    border-radius: 5px;
-}
 
-.subheading__wrapper {
-    margin-bottom: 4.5rem;
-}
 
 
 /************************/
