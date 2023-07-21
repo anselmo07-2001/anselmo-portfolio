@@ -5,6 +5,7 @@ import AboutMe from "./components/AboutMe"
 import Techstack from "./components/Techstack"
 import MyProject from "./components/MyProject"
 import Contact from "./components/Contact"
+import Footer from "./components/Footer"
 import global from "../src/style/global.css"
 
 
@@ -17,6 +18,7 @@ function App() {
       <Techstack/>
       <MyProject/>
       <Contact/>
+      <Footer/>
    </>
    )
 }
