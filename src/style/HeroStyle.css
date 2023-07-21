@@ -1,34 +1,37 @@
 .heroLayout {
     display:grid;
     grid-template-columns: 1fr 1fr;
-    padding: 15rem 2.5rem;
+    padding-top: 15rem;
+    padding-bottom: 15rem;
 }
 
-.hero--wrapper {
+.hero-section {
     background-color:#f3f3f3;
     margin-bottom:12rem;
+    padding-left:2.5rem;
+    padding-right:2.5rem;
 }
 
-.hero--heading {
+.hero-heading {
     font-size:6.5rem;
     line-height: 6.8rem;
 }
 
-.hero--subheading {
+.hero-subheading {
     font-size:2.8rem;
     margin-bottom:2rem;
 }
 
-.hero--desc {
+.hero-desc {
     font-size:1.8rem;
     margin-bottom:1.5rem;
 }
 
-.hero--icons {
+.hero-icons {
     display: flex;
 }
 
-.hero--icon {
+.hero-icon {
     width:2.5rem;
     margin-right:1rem;
 }
@@ -42,10 +45,89 @@
 .profile {
     width: 30rem;
     height: 30rem;
-    border: 5px solid #7843e9;
     border-radius: 50%;
     position: absolute;
     top:50%;
     left:60%;
     transform: translate(-50%,-50%);
+}
+
+
+.profile-img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 5px solid #7843e9;
+    animation: animate 5s ease-in-out infinite;
+    transition: all 1s ease-in-out;
+    box-shadow: 0 3px 10px 4px rgba(0,0,0,0.2);
+}
+
+
+@keyframes animate {
+    0% {
+        border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+    }
+    50% {
+        border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
+    }
+    100% {
+        border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+    }
+}
+/** 1rem = 16px **/
+
+@media (max-width:70rem) {
+    .hero-heading {
+        font-size: 5rem;
+    }
+
+    .hero-subheading {
+        font-size:2.2rem;
+    }
+    
+    .hero-desc {
+        font-size:1.5rem;
+    }
+
+    .profile {
+        width: 26rem;
+        height: 26rem;
+    }
+}
+
+/** Mobile Size **/
+@media (max-width:60rem) {
+    .hero-user-desc {
+        order:1;
+    }
+
+    .profileContainer {
+        order:-1;
+    }
+
+    .heroLayout {
+        grid-template-columns: 1fr;
+        row-gap:15rem;
+    }
+
+    .profile {
+        left:50%;
+    }
+
+    .hero-desc {
+        font-size:1.7rem;
+    }
+
+    .profileContainer {
+        padding-top: 4.5rem;
+    }
+
+    .hero-user-desc {
+        text-align: center;
+    }
+
+    .hero-icons {
+        justify-content: center;
+    }
 }
