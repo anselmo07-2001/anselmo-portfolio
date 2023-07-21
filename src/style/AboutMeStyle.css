@@ -1,8 +1,16 @@
+.aboutMe-section {
+    padding-right:2.5rem;
+    padding-left: 2.5rem;
+    margin-bottom: 15rem;
+}
+
 .aboutMe {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin-bottom: 15rem;
+    gap: 4.5rem;
+    padding: 2rem;
 }
+
 
 .aboutMe__heading {
     font-size:2.3rem;
@@ -27,8 +35,15 @@
     color:white;
     padding:1rem 2.5rem;
     border: none;
-    border-radius:1rem;
+    border-radius:0.5rem;
     font-weight: bold;
+    transition: all 0.3s;
+}
+
+.resumeBtn:hover {
+    background-color:#fff;
+    color:#7843e9;
+    outline:2px solid #7843e9;
 }
 
 .aboutMe__photoWrapper {
@@ -40,5 +55,33 @@
     height: 20rem;
     border: 3px solid #7843e9;
     border-radius: 0.5rem;
-    margin
+}
+
+.aboutMe-img {
+    width: 100%;
+    height: 100%;
+}
+
+@media (max-width:70rem) {
+
+}
+
+
+
+
+@media (max-width:60rem) {
+    .aboutMe {
+        grid-template-columns: 1fr;
+        justify-items: center;
+        gap:0;
+    }
+
+    .aboutMe__photoWrapper {
+        margin-left: 0;
+        margin-bottom:2rem;
+    }
+
+    .aboutMe-desc {
+        text-align: center;
+    }
 }
