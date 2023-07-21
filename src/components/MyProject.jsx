@@ -59,6 +59,10 @@ const MyProject = () => {
                         </div>
                     </div>    
                 </div>
+
+                <div className="linkProject">
+                     <a href="#" className="more-project futuraPtMd">Discover More Projects</a>
+                </div>
             </div>
         </div>
     )
