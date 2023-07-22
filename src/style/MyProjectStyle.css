@@ -172,4 +172,9 @@
     .project-imageContainer {
         width:100%;
     }
+
+    .project-explain {
+        font-size: 1.4rem;
+    }
+    
 }
