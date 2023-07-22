@@ -87,3 +87,26 @@
     }
 }
 
+/** Mobile **/
+
+/** 490px **/
+@media (max-width:30.62rem) {
+    .tech-name {
+        width: 5.5rem;
+        height: 5.5rem;
+    }
+
+    .techologies {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .tech-box-heading {
+        margin-bottom: 5.5rem;
+    }
+
+    .tech-box {
+        padding: 4.5rem;
+    }
+   
+}
+

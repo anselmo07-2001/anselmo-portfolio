@@ -112,6 +112,7 @@
     justify-content: end;
 }
 
+/** table **/
 @media (max-width:60rem) {
     .project-subheading {
         display: none;
