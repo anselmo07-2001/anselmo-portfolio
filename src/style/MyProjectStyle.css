@@ -153,6 +153,7 @@
 
     .project-imageContainer {
         order:1;
+        width:80%;
     }
 
 
@@ -164,5 +165,11 @@
         display: flex;
         justify-content: center;
         top: 62rem;
+    }
+}
+
+@media (max-width:30.62rem) {
+    .project-imageContainer {
+        width:100%;
     }
 }
