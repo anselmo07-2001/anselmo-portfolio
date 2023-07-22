@@ -17,12 +17,12 @@ import mongodb from "../assets/images/mongodb.png"
 
 const Techstack = () => {
     return (
-        <div className="techstack__wrapper">
+        <section className="techstack-section">
             <div className="container">
                 <SubHeading title={"Technologies Stack (Skills)"} ml={"13rem"}/>
                 <div className="techstack">
 
-                    <div className="tech-box">
+                    <div className="tech-box tech-box-1">
                         <div className="tech-box-heading futuraPtBl">Frontend Technologies</div>
                         <div className="techologies">
                             <div className="tech-name">
@@ -52,7 +52,7 @@ const Techstack = () => {
                         </div>
                     </div>
 
-                    <div className="tech-box">
+                    <div className="tech-box tech-box-2">
                         <div className="tech-box-heading futuraPtBl">Backend Technologies</div>
                         <div className="techologies">
                             <div className="tech-name">
@@ -77,7 +77,7 @@ const Techstack = () => {
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     )
 }
 
