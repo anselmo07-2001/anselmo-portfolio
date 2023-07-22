@@ -51,7 +51,7 @@
 }
 
 .aboutMe__photo {
-    width: 35rem;
+    max-width: 35rem;
     height: 20rem;
     border: 3px solid #7843e9;
     border-radius: 0.5rem;
@@ -80,3 +80,18 @@
         text-align: center;
     }
 }
+
+@media (max-width:30.62rem) {
+    .aboutMe__subheading {
+        font-size: 1.6rem;
+    }
+
+    .aboutMe__desc {
+        font-size: 1.4rem;
+    }
+    
+    .resumeBtn {
+        padding: 0.7rem 2rem;
+    }
+}
+
