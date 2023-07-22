@@ -1,29 +1,30 @@
 .project {
     position: relative;
     margin-bottom: 12rem;
+    padding:7.5rem 2rem 0 2rem;
 }
 
 .projects {
-    padding-left: 10rem;
+    /* padding-left: 10rem; */
 }
 
 /* .projects {
     padding: 0 4.5rem;
 } */
 
-.project-wrapper {
-    margin-bottom: 15rem;
+.project-section {
+    margin-bottom:15rem;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
 }
 
 .project-imageContainer {
     width: 60%;
-    height: 40rem;
-    border: 3px solid #7843e9;
 }
 
 .project-image {
     width: 100%;
-    height: 100%;
+    box-shadow: 0 3px 10px 4px rgba(0,0,0,0.2);
 }
 
 .project-desc {
@@ -31,7 +32,7 @@
     flex-direction: column;
     align-items: end;
     position: absolute;
-    top: 4rem;
+    top: 9rem;
     right: 0rem;
 }
 
@@ -55,6 +56,7 @@
     background: #7843e9;
     margin-bottom: 2rem;
     padding: 2rem;
+    font-family: futuraPtBl;
 }
 .project-explain {
     color:#fff;
@@ -66,7 +68,7 @@
     gap:2rem;
     list-style: none;
     font-size:1.5rem;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
 }
 
 .project-external-link {
@@ -80,6 +82,10 @@
 
 .linkProject {
     text-align: center;
+    transition: all 0.3s;
+}
+.linkProject:hover {
+    transform: translateY(-5px);
 }
 
 .more-project {
@@ -90,7 +96,12 @@
     font-size: 1.4rem;
 }
 
+.showWhenBreakout {
+    display: none;
+}
+
 /*** Classes use for flipping the project **/
+
 
 .move-desc-toLeft {
    align-items: start;
@@ -99,4 +110,58 @@
 .project-image-toRight {
     display: flex;
     justify-content: end;
+}
+
+@media (max-width:60rem) {
+    .project-subheading {
+        display: none;
+    }
+
+    .project-tools {
+        justify-content: center;
+    }
+
+    .project {
+        display: grid;
+        justify-items: center
+    }
+
+    .project-desc {
+        position: initial;
+        display: block;
+    }
+
+    .project-explain {
+        color:#000;
+    }
+
+    .project-summary {
+        display: block;
+        width: auto;
+        height: auto;
+        padding: 0;
+        background: initial;
+        font-family:futuraPtMedium;
+    }
+
+    .project-title{
+        margin-bottom:1rem;
+        text-align: center;
+        color:#7843e9;
+    }
+
+    .project-imageContainer {
+        order:1;
+    }
+
+
+    .hideWhenBreakout {
+        display: none;
+    }
+
+    .showWhenBreakout {
+        display: flex;
+        justify-content: center;
+        top: 62rem;
+    }
 }
