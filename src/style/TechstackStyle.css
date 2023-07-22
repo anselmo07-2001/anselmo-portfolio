@@ -8,6 +8,7 @@
     display:grid;
     grid-template-columns: 1fr 1fr;
     justify-items: center;
+    gap:2rem;
     padding:7.5rem 2rem 0 2rem;
 }
 
@@ -39,6 +40,11 @@
 .tech-name {
     width:7rem;
     height:7rem;
+    transition: all 0.3s;
+}
+
+.tech-name:hover {
+    transform: translateY(-10px);
 }
 
 .tech-image {
