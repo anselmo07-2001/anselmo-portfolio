@@ -53,6 +53,12 @@
     border: none;
     border-radius: 0.5rem;
     font-weight: bold;
+    transition: all 0.3s;
+}
+.contactBtn:hover {
+    background-color: white; 
+    color: #7843e9;
+    outline:2px solid #7843e9;
 }
 
 
