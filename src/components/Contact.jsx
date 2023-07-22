@@ -3,9 +3,9 @@ import ContactStyle from "../style/ContactStyle.css"
 
 const Contact = () => {   
     return (
-        <div className="contact-section">
+        <section className="contact-section">
             <div className="container">
-                <SubHeading title="Contact" ml="3rem"/>     
+                <SubHeading title="Contact"/>     
                     <form className="contact-form">
                         <div className="form-inputFieldsGroup">
                             <div className="form-inputGroup">
@@ -30,7 +30,7 @@ const Contact = () => {
                         </div>
                     </form>
             </div>
-        </div>
+        </section>
     )
 }
 
