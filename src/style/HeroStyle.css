@@ -75,8 +75,8 @@
         border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
     }
 }
-/** 1rem = 16px **/
 
+/** Tablet Size **/
 @media (max-width:70rem) {
     .hero-heading {
         font-size: 5rem;
@@ -96,7 +96,7 @@
     }
 }
 
-/** Mobile Size **/
+/** Tablet Size **/
 @media (max-width:60rem) {
     .hero-user-desc {
         order:1;
@@ -129,5 +129,31 @@
 
     .hero-icons {
         justify-content: center;
+    }
+}
+
+
+/* Mobile */
+@media (max-width:30.62rem) {
+    .hero-heading {
+        font-size: 3.4rem;
+    }
+
+    .hero-subheading {
+        font-size: 1.8rem;
+    }
+
+    .hero-desc {
+        font-size: 1.3rem;
+    }
+
+    .profile {
+        width: 22rem;
+        height: 22rem;
+    }
+
+    .heroLayout {
+        row-gap: 10rem;
+        padding-bottom: 9rem;
     }
 }
