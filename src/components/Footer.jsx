@@ -12,13 +12,13 @@ const Footer = () => {
                     <div className="footer-desc futuraPtBook">Living, learning, & leveling up one day at a time.</div>
                     <div className="footer-icons">
                         <div className="footer-icon">
-                            <a href="#"><img src={facebookIcon} className="footer-image-icon"/></a>
+                            <a href="https://www.facebook.com/alexander.shackle"><img src={facebookIcon} className="footer-image-icon"/></a>
                         </div>
                         <div className="footer-icon">
-                            <a href="#"><img src={githubIcon} className="footer-image-icon"/></a>
+                            <a href="https://www.github.com/anselmo07-2001"><img src={githubIcon} className="footer-image-icon"/></a>
                         </div>
                         <div className="footer-icon">
-                            <a href="#"><img src={linkedinIcon} className="footer-image-icon"/></a>
+                            <a href="https://www.linkedin.com/in/anselmo-rivera-iii"><img src={linkedinIcon} className="footer-image-icon"/></a>
                         </div>
                     </div>
                     <div className="futuraPtBook">Copyright © 2023 by Anselmo Rivera III. All rights reserved</div>
