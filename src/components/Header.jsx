@@ -23,6 +23,10 @@ const Header = () => {
                               offset={-100} duration={1200} onClick={handleClickLink}>Home</Link>
                     </li>
                     <li>
+                        <Link to="aboutMe-id" className="nav__link" spy={true} smooth={true} 
+                              offset={-100} duration={1200} onClick={handleClickLink}>About</Link>
+                    </li>
+                    <li>
                        <Link to="skill-id" className="nav__link" spy={true} smooth={true} 
                               offset={-100} duration={1200} onClick={handleClickLink}>Skills</Link>
                     </li>
@@ -33,10 +37,6 @@ const Header = () => {
                     <li>
                         <Link to="contact-id" className="nav__link" spy={true} smooth={true} 
                               offset={-100} duration={1200} onClick={handleClickLink}>Contact</Link>
-                    </li>
-                    <li>
-                        <Link to="aboutMe-id" className="nav__link" spy={true} smooth={true} 
-                              offset={-100} duration={1200} onClick={handleClickLink}>About</Link>
                     </li>
                 </ul>
             </div>
