@@ -10,7 +10,7 @@ import externalLink from "../assets/images/external-link.png"
 
 const MyProject = () => {
     return (
-        <section className="project-section">
+        <section className="project-section" id="project-id">
             <div className="container">
                 <SubHeading title="My Project" ml="4rem"/>
                 <div className="projects">

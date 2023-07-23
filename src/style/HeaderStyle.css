@@ -17,6 +17,7 @@
 .nav__link {
     text-decoration: none;
     color:#000;
+    cursor: pointer;
 }
 
 .toggleBtnWrapper {

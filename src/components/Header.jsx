@@ -1,3 +1,4 @@
+import { Link } from "react-scroll"
 import { useState } from "react"
 import HeaderStyle from "../style/HeaderStyle.css"
 
@@ -5,21 +6,31 @@ const Header = () => {
 
     const [ isToggleActive, setIsToggleActive ] = useState(false)
 
-
-   
-
-    
-
     return (
         <nav className="leagueSpartanFont nav">
             <div>anselmo.dev</div>
             <div className={`nav__navigationLink ${isToggleActive ? 'move-toogle' : ""}`}>
                 <ul className="nav__links">
-                    <li><a href="#" className="nav__link">Home</a></li>
-                    <li><a href="#" className="nav__link">Contact</a></li>
-                    <li><a href="#" className="nav__link">About</a></li>
-                    <li><a href="#" className="nav__link">Skill</a></li>
-                    <li><a href="#" className="nav__link">Project</a></li>
+                    <li>
+                        <Link to="hero-id" className="nav__link" spy={true} smooth={true} 
+                              offset={-20} duration={500}>Home</Link>
+                    </li>
+                    <li>
+                       <Link to="skill-id" className="nav__link" spy={true} smooth={true} 
+                              offset={-20} duration={500}>Skills</Link>
+                    </li>
+                    <li> 
+                        <Link to="project-id" className="nav__link" spy={true} smooth={true} 
+                              offset={-20} duration={500}>Projects</Link>
+                    </li>
+                    <li>
+                        <Link to="contact-id" className="nav__link" spy={true} smooth={true} 
+                              offset={-20} duration={1200}>Contact</Link>
+                    </li>
+                    <li>
+                        <Link to="aboutMe-id" className="nav__link" spy={true} smooth={true} 
+                              offset={-20} duration={500}>About</Link>
+                    </li>
                 </ul>
             </div>
             <div className="toggleBtnWrapper">

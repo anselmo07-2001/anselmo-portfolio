@@ -4,7 +4,7 @@ import user from "../assets/images/user2.jpg"
 
 const AboutMe = () => {
     return (
-        <section className="aboutMe-section">
+        <section className="aboutMe-section" id="aboutMe-id">
             <div className="container">
                 <SubHeading title={"About Me"} ml={"3.5rem"}/>
                 <div className="aboutMe">

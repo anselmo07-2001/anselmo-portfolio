@@ -3,7 +3,7 @@ import ContactStyle from "../style/ContactStyle.css"
 
 const Contact = () => {   
     return (
-        <section className="contact-section">
+        <section className="contact-section" id="contact-id">
             <div className="container">
                 <SubHeading title="Contact"/>     
                     <form className="contact-form">

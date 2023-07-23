@@ -17,7 +17,7 @@ import mongodb from "../assets/images/mongodb.png"
 
 const Techstack = () => {
     return (
-        <section className="techstack-section">
+        <section className="techstack-section" id="skill-id">
             <div className="container">
                 <SubHeading title={"Technologies Stack (Skills)"} ml={"13rem"}/>
                 <div className="techstack">

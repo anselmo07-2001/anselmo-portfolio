@@ -5,7 +5,7 @@ import user from "../assets/images/user.jpg"
 
 const Hero = () => {
     return (
-        <section className="hero-section">
+        <section className="hero-section" id="hero-id">
             <div className="container heroLayout">
                 <div className="hero-user-desc">
                     <h1 className="hero-heading leagueSpartanFont">Hi, <span className="mainColor">I'm Anselmo</span></h1>
