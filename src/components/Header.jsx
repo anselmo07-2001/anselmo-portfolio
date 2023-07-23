@@ -8,6 +8,11 @@ const Header = () => {
     const [ isToggleActive, setIsToggleActive ] = useState(false)
     const { isHeroVisible } = useContext(Context)
 
+
+    const handleClickLink = () => {
+        setIsToggleActive(!isToggleActive)
+    }
+
     return (
         <nav className={`leagueSpartanFont nav ${isHeroVisible ? "" : "sticky"}`}>
             <div>anselmo.dev</div>
@@ -15,23 +20,23 @@ const Header = () => {
                 <ul className="nav__links">
                     <li>
                         <Link to="hero-id" className="nav__link" spy={true} smooth={true} 
-                              offset={-100} duration={500}>Home</Link>
+                              offset={-100} duration={1200} onClick={handleClickLink}>Home</Link>
                     </li>
                     <li>
                        <Link to="skill-id" className="nav__link" spy={true} smooth={true} 
-                              offset={-100} duration={500}>Skills</Link>
+                              offset={-100} duration={1200} onClick={handleClickLink}>Skills</Link>
                     </li>
                     <li> 
                         <Link to="project-id" className="nav__link" spy={true} smooth={true} 
-                              offset={-100} duration={500}>Projects</Link>
+                              offset={-100} duration={1200} onClick={handleClickLink}>Projects</Link>
                     </li>
                     <li>
                         <Link to="contact-id" className="nav__link" spy={true} smooth={true} 
-                              offset={-100} duration={1200}>Contact</Link>
+                              offset={-100} duration={1200} onClick={handleClickLink}>Contact</Link>
                     </li>
                     <li>
                         <Link to="aboutMe-id" className="nav__link" spy={true} smooth={true} 
-                              offset={-100} duration={500}>About</Link>
+                              offset={-100} duration={1200} onClick={handleClickLink}>About</Link>
                     </li>
                 </ul>
             </div>
