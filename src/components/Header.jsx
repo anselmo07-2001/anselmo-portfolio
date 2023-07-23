@@ -1,35 +1,37 @@
 import { Link } from "react-scroll"
-import { useState } from "react"
+import { useContext, useState } from "react"
 import HeaderStyle from "../style/HeaderStyle.css"
+import { Context } from "../context/headerContext"
 
 const Header = () => {
 
     const [ isToggleActive, setIsToggleActive ] = useState(false)
+    const { isHeroVisible } = useContext(Context)
 
     return (
-        <nav className="leagueSpartanFont nav">
+        <nav className={`leagueSpartanFont nav ${isHeroVisible ? "" : "sticky"}`}>
             <div>anselmo.dev</div>
             <div className={`nav__navigationLink ${isToggleActive ? 'move-toogle' : ""}`}>
                 <ul className="nav__links">
                     <li>
                         <Link to="hero-id" className="nav__link" spy={true} smooth={true} 
-                              offset={-20} duration={500}>Home</Link>
+                              offset={-100} duration={500}>Home</Link>
                     </li>
                     <li>
                        <Link to="skill-id" className="nav__link" spy={true} smooth={true} 
-                              offset={-20} duration={500}>Skills</Link>
+                              offset={-100} duration={500}>Skills</Link>
                     </li>
                     <li> 
                         <Link to="project-id" className="nav__link" spy={true} smooth={true} 
-                              offset={-20} duration={500}>Projects</Link>
+                              offset={-100} duration={500}>Projects</Link>
                     </li>
                     <li>
                         <Link to="contact-id" className="nav__link" spy={true} smooth={true} 
-                              offset={-20} duration={1200}>Contact</Link>
+                              offset={-100} duration={1200}>Contact</Link>
                     </li>
                     <li>
                         <Link to="aboutMe-id" className="nav__link" spy={true} smooth={true} 
-                              offset={-20} duration={500}>About</Link>
+                              offset={-100} duration={500}>About</Link>
                     </li>
                 </ul>
             </div>

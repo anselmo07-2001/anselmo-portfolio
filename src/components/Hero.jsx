@@ -2,11 +2,41 @@ import HeroStyle from "../style/HeroStyle.css"
 import githubIcon from "../assets/images/github-icon.png"
 import linkedinIcon from "../assets/images/linkedin-icon.png"
 import user from "../assets/images/user.jpg"
+import { useEffect, useRef, useContext} from "react"
+import { Context } from "../context/headerContext"
 
 const Hero = () => {
+
+    const ref = useRef(0)
+    const { setIsHeroVisible, isHeroVisible } = useContext(Context)
+    
+
+    useEffect(() => {
+
+        const obs = new IntersectionObserver(function(entries){
+            const hero = entries[0]
+    
+            if (!hero.isIntersecting) {
+                setIsHeroVisible(false)
+            }
+        
+            if (hero.isIntersecting) {
+                setIsHeroVisible(true)
+            }
+        },{
+           root:null,
+           threshold:0,
+           rootMargin:"-64px"
+        })
+        
+        obs.observe(ref.current)
+
+    },[])
+
+
     return (
-        <section className="hero-section" id="hero-id">
-            <div className="container heroLayout">
+        <section className="hero-section" id="hero-id" style={ isHeroVisible ? {} : { marginTop: "8rem" }}>
+            <div className="container heroLayout" ref={ref}>
                 <div className="hero-user-desc">
                     <h1 className="hero-heading leagueSpartanFont">Hi, <span className="mainColor">I'm Anselmo</span></h1>
                     <h3 className="hero-subheading leagueSpartanFont">Javascript Fullstack Developer</h3>
