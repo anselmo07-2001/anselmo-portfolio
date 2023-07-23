@@ -35,7 +35,7 @@ const MyProject = () => {
 
                     <div className="project project-image-toRight">
                         <div className="project-imageContainer">
-                            <img src={natours} alt="natours" className="project-image"/>
+                            <img src={natours} alt="chatty" className="project-image"/>
                             <div className="project-external-link showWhenBreakout">
                                 <a href="https://github.com/anselmo07-2001/myNatoursApp" target="_blank"><img src={githubIcon} alt="project github link" className="project-icon"/></a>
                                 <a href="https://mynatours-fjyk.onrender.com/" target="_blank"><img src={externalLink} alt="project live demo" className="project-icon"  /></a>
@@ -46,10 +46,10 @@ const MyProject = () => {
                                      description="A tour web application for people who wants adventure and 
                                      experience the different amazing places around the world, Uses Stripe API to
                                      handled secure international transaction and Mapbox API to render the tour location"
-                                     flip={true} 
+                                     flip={true}
                                      githubLink="https://github.com/anselmo07-2001/myNatoursApp"
-                                     liveDemoLink="https://mynatours-fjyk.onrender.com/"/>
-                    </div>
+                                     liveDemoLink="https://mynatours-fjyk.onrender.com/" />
+                    </div>  
 
                     <div className="project">
                         <div className="project-imageContainer">
