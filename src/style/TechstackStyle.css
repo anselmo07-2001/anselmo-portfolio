@@ -105,7 +105,8 @@
     }
 
     .tech-box {
-        padding: 4.5rem;
+        padding: 2rem;
+        max-width: 25rem;
     } 
 }
 
