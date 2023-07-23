@@ -85,3 +85,9 @@
         padding: 0.8rem 2.2rem;
     }
 }
+
+@media (max-width:31rem) {
+    .form-inputFieldsGroup {
+        padding: 3.5rem 2.7rem;
+    }
+}
