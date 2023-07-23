@@ -57,7 +57,7 @@ const Contact = () => {
                     <form className="contact-form" ref={form} onSubmit={sendEmail}>
                         <div className="form-inputFieldsGroup">
                             <div className="form-inputGroup">
-                                <label for="name" className="leagueSpartanFont form-label">Name</label>
+                                <label for="name" className="futuraPtMd form-label">Name</label>
                                 <br/>
                                 <input id="name" type="text" className="form-input-field futuraPtBook" 
                                        placeholder="Enter your name" name="visitor_name"
@@ -66,7 +66,7 @@ const Contact = () => {
                                 <span className="msgError futuraPtLight">{inputNameErrMsg}</span>
                             </div>
                             <div className="form-inputGroup">
-                                <label for="email" className="leagueSpartanFont form-label">Email</label>
+                                <label for="email" className="futuraPtMd form-label">Email</label>
                                 <br/>
                                 <input id="email" type="email" className="form-input-field futuraPtBook" 
                                        placeholder="Enter your email" name="visitor_email"
@@ -75,7 +75,7 @@ const Contact = () => {
                                 <span className="msgError futuraPtLight">{inputEmailErrMsg}</span>
                             </div>
                             <div className="form-inputGroup">
-                                <label for="message" className="leagueSpartanFont form-label">Message</label>
+                                <label for="message" className="futuraPtMd form-label">Message</label>
                                 <br/>
                                 <textarea id="message" type="text" className="form-input-field futuraPtBook" 
                                        placeholder="Enter your message" name="message"
