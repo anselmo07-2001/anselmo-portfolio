@@ -124,7 +124,7 @@
 
 @media (max-width:30.62rem) {
     .nav__links {
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
 
     .toggleBtn__line--close,
@@ -135,7 +135,18 @@
     .toggleBtn--open {
         padding-left:1rem;
     }
-    
-    
+
+    .nav {
+        height: 7rem;
+    }
+
+    .contactBtn {
+        font-size: 0.9rem;
+    }
+
+    .form-label {
+        font-size: 1.2rem;
+    }
 }
+
 
