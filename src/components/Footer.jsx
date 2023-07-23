@@ -21,7 +21,7 @@ const Footer = () => {
                             <a href="https://www.linkedin.com/in/anselmo-rivera-iii"><img src={linkedinIcon} className="footer-image-icon"/></a>
                         </div>
                     </div>
-                    <div className="futuraPtBook">Copyright © 2023 by Anselmo Rivera III. All rights reserved</div>
+                    <div className="futuraPtBook copyright">Copyright © 2023 by Anselmo Rivera III. All rights reserved</div>
                 </div>
             </div>
         </div>

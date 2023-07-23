@@ -58,3 +58,24 @@
         height: 2.5rem;
     }
 }
+
+/** 500px **/
+@media (max-width: 31rem) {
+    .footer-heading {
+        font-size: 1.8rem;
+    }
+
+    .footer-desc {
+        font-size: 1.2rem;
+    }
+
+    .footer-icon {
+        width: 2rem;
+        height: 2rem;
+    }
+
+    .copyright {
+        font-size: 0.7rem;
+    }
+    
+}
