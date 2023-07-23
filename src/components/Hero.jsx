@@ -40,7 +40,7 @@ const Hero = () => {
                 <div className="hero-user-desc">
                     <h1 className="hero-heading leagueSpartanFont">Hi, <span className="mainColor">I'm Anselmo</span></h1>
                     <h3 className="hero-subheading leagueSpartanFont">Javascript Fullstack Developer</h3>
-                    <div className="hero-desc futuraPtLight">A Highly motivated and passionate <span className="mainColor">Web Developer </span>
+                    <div className="hero-desc futuraPtMd">A Highly motivated and passionate <span className="mainColor">Web Developer </span>
                         who creating interactive web applications and experiences
                         on the web
                     </div>
