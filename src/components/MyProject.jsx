@@ -26,9 +26,10 @@ const MyProject = () => {
                         {/* show this links only when viewport is not mobile size happen */}
                         <ProjectDesc projectName={"Omnifood"}
                                      tools={["HTML","CSS","JAVASCRIPT"]}
-                                     description="A beautiful static landing web page for people love healthy food 
+                                     description="A beautiful static landing web page design 
+                                     adapt to mobile ui friendly for people love healthy food 
                                      and customize the customer based in its personal
-                                     tastes and nutrional need"
+                                     tastes and nutrional need."
                                      githubLink="https://github.com/anselmo07-2001/Omnifood-"
                                      liveDemoLink="https://omnifoodei.netlify.app/"/>
                     </div>
