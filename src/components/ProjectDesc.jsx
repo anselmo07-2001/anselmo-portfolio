@@ -13,7 +13,7 @@ const ProjectDesc = (props) => {
                 <div className="project-subheading leagueSpartanFont mainColor">Featured Project</div>
                 <div className="project-title leagueSpartanFont">{projectName}</div>
                 <div className="project-summary">
-                    <p className="project-explain">{description}
+                    <p className="project-explain futuraPtLight">{description}
                     </p>
                 </div>
                 <ul className="project-tools futuraPtMd">
