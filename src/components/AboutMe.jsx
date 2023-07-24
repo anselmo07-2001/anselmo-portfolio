@@ -24,9 +24,9 @@ const AboutMe = () => {
                         </div>
                         {/* <button className="resumeBtn" title="Download my resume">Resume</button> */}
                        
-                        <button className="resumeBtn">
-                            <a href={resume} download title="Download my resume">Resume</a>
-                        </button>
+                        <a href={resume} download title="Download my resume" target="_blank">
+                            <button className="resumeBtn" title="Download my resume">Resume</button>
+                        </a>
                     </div>
                 </div>
             </div>
