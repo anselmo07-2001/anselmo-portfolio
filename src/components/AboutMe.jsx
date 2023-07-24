@@ -1,6 +1,7 @@
 import AboutMeStyle from "../style/AboutMeStyle.css"
 import SubHeading from "./SubHeading"
 import user from "../assets/images/user2.jpg"
+import resume from "../assets/files/resumeanselmo2023v3.pdf"
 
 const AboutMe = () => {
     return (
@@ -21,7 +22,7 @@ const AboutMe = () => {
                             to create modern web application. My expertise lies in my passion
                             in this field to craft dynamic and user-friendly web apps 
                         </div>
-                        <button className="resumeBtn" title="Download my resume">Resume</button>
+                        <a href={resume} download className="resumeBtn" title="Download my resume">Resume</a>
                     </div>
                 </div>
             </div>
