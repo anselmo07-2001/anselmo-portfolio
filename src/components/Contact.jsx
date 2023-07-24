@@ -1,3 +1,4 @@
+import validator from "validator";
 import { useRef, useState } from "react"
 import emailjs from '@emailjs/browser';
 import SubHeading from "./SubHeading"
@@ -23,11 +24,12 @@ const Contact = () => {
         !inputName ? setInputNameErrMsg("Name is required")  : setInputNameErrMsg("")
         !inputEmail ? setInputEmailErrMsg("Email is required") : setInputEmailErrMsg("")
         !inputMessage ? setInputMessageErrMsg("Message is required") : setInputMessageErrMsg("")
+        !validator.isEmail(inputEmail) ? setInputEmailErrMsg("Email is not valid") : setInputEmailErrMsg("")
 
         try {
 
-            if (!inputName || !inputEmail || !inputMessage) {
-                 throw new Error("Some Input Field is Empty")
+            if (!inputName || !inputEmail || !inputMessage || !validator.isEmail(inputEmail)) {
+                 throw new Error("Some Input Field is Empty or wrong")
             }
 
             const res = await emailjs.sendForm('service_ks5mg5f', 'template_dh484as', 

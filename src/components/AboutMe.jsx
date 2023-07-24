@@ -22,7 +22,11 @@ const AboutMe = () => {
                             to create modern web application. My expertise lies in my passion
                             in this field to craft dynamic and user-friendly web apps 
                         </div>
-                        <a href={resume} download className="resumeBtn" title="Download my resume">Resume</a>
+                        {/* <button className="resumeBtn" title="Download my resume">Resume</button> */}
+                       
+                        <button className="resumeBtn">
+                            <a href={resume} download title="Download my resume">Resume</a>
+                        </button>
                     </div>
                 </div>
             </div>
